@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Videos</title>
+    <link rel="stylesheet" href="styles/hacker.css">
+</head>
+<body class="hacker-theme">
+    <div class="matrix-container">
+        <canvas id="matrix"></canvas>
+        <div class="content">
+            <h1 class="glitch" data-text="VIDEO UPLOAD">VIDEO UPLOAD</h1>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="red-btn"></span>
+                    <span class="yellow-btn"></span>
+                    <span class="green-btn"></span>
+                    <span class="title">upload@hacker:~</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="upload-container">
+                        <form id="uploadForm">
+                            <input type="file" id="videoInput" accept="video/*" required>
+                            <button type="submit" class="cmd-btn">UPLOAD</button>
+                        </form>
+                        <div id="progressContainer" class="hidden">
+                            <p>> Uploading: <span id="fileName"></span></p>
+                            <progress id="uploadProgress" value="0" max="100"></progress>
+                            <p id="status"></p>
+                        </div>
+                    </div>
+                    <p><a href="index.html" class="cmd-link"><< Back to main menu</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/upload.js"></script>
+    <script src="scripts/matrix.js"></script>
+</body>
+                    </html>
