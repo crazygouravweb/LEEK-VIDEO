@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Player</title>
+    <title>Hacker Video Portal</title>
+    <link rel="stylesheet" href="styles/hacker.css">
 </head>
-<body>
-    <h2>My Video</h2>
-    <video width="640" height="360" controls>
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+<body class="hacker-theme">
+    <div class="matrix-container">
+        <canvas id="matrix"></canvas>
+        <div class="content">
+            <h1 class="glitch" data-text="VIDEO PORTAL">VIDEO PORTAL</h1>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="red-btn"></span>
+                    <span class="yellow-btn"></span>
+                    <span class="green-btn"></span>
+                    <span class="title">root@hacker:~</span>
+                </div>
+                <div class="terminal-body">
+                    <p>> Welcome to secure video portal</p>
+                    <p>> Select your operation:</p>
+                    <ul class="cmd-list">
+                        <li><a href="upload.html" class="cmd-link">1. Upload new video</a></li>
+                        <li><a href="manager.html" class="cmd-link">2. Manage video files</a></li>
+                    </ul>
+                    <p>> Connection secured. No database used.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/matrix.js"></script>
 </body>
 </html>
